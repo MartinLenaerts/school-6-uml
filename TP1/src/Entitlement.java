@@ -11,4 +11,15 @@ public class Entitlement {
 
     private Customer customer;
     private Set<Product> products;
+
+    public Entitlement(String EID, EntitlementType type, Date startDate, Date endDate, Boolean neverExpires, String comments, Customer customer, Set<Product> products) {
+        this.EID = EID;
+        this.type = type;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.neverExpires = neverExpires;
+        this.comments = comments;
+        this.customer = customer;
+        this.products = products;
+    }
 }

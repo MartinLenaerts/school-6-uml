@@ -5,4 +5,10 @@ public class BatchCode {
 
     private Set<Product> products;
     private Set<Feature> features;
+
+    public BatchCode(String id, Set<Product> products, Set<Feature> features) {
+        this.id = id;
+        this.products = products;
+        this.features = features;
+    }
 }

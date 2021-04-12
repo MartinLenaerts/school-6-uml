@@ -5,4 +5,12 @@ public class Company  extends Customer{
 
     private Details billing;
     private Details shipping;
+
+    public Company(String name, String phone, String fax, Details billing, Details shipping) {
+        this.name = name;
+        this.phone = phone;
+        this.fax = fax;
+        this.billing = billing;
+        this.shipping = shipping;
+    }
 }
