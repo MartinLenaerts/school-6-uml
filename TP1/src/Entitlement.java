@@ -1,4 +1,5 @@
 import java.util.Date;
+import java.util.HashSet;
 import java.util.Set;
 
 public class Entitlement {
@@ -18,6 +19,26 @@ public class Entitlement {
         this.startDate = startDate;
         this.endDate = endDate;
         this.neverExpires = neverExpires;
+        this.comments = comments;
+        this.customer = customer;
+        this.products = products;
+    }
+
+    public Entitlement(String EID, EntitlementType type, Date startDate, Date endDate,  String comments, Customer customer) {
+        this.EID = EID;
+        this.type = type;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.comments = comments;
+        this.customer = customer;
+        this.products = new HashSet<Product>();
+    }
+
+    public Entitlement(String EID, EntitlementType type, Date startDate, Date endDate,  String comments, Customer customer,Set<Product> products) {
+        this.EID = EID;
+        this.type = type;
+        this.startDate = startDate;
+        this.endDate = endDate;
         this.comments = comments;
         this.customer = customer;
         this.products = products;

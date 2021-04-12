@@ -9,6 +9,9 @@ public class Feature {
         this.description = description;
     }
 
+    public Feature() {
+    }
+
     @Override
     public String toString() {
         return "Feature{" +

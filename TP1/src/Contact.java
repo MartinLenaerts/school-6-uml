@@ -14,6 +14,12 @@ public class Contact {
         this.email = email;
         this.locale = locale;
     }
+    public Contact(String firstname, String lastName, String middleName, String email) {
+        this.firstname = firstname;
+        this.lastName = lastName;
+        this.middleName = middleName;
+        this.email = email;
+    }
 
     @Override
     public String toString() {

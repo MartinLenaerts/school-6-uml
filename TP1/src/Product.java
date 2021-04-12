@@ -13,6 +13,8 @@ public class Product {
     private Set<Product> provisionalProduct;
     private ArrayList<Feature> associatedFeature;
 
+
+    public Product(){}
     public Product(int id, String name, LockingType lockingType, Rehost rehost, String description, Product baseProduct, Set<Product> provisionalProduct, ArrayList<Feature> associatedFeature) {
         this.id = id;
         this.name = name;
