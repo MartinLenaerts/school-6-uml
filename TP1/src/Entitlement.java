@@ -22,4 +22,19 @@ public class Entitlement {
         this.customer = customer;
         this.products = products;
     }
+
+
+    @Override
+    public String toString() {
+        return "Entitlement{" +
+                "EID='" + EID + '\'' +
+                ", type=" + type +
+                ", startDate=" + startDate +
+                ", endDate=" + endDate +
+                ", neverExpires=" + neverExpires +
+                ", comments='" + comments + '\'' +
+                ", customer=" + customer +
+                ", products=" + products +
+                '}';
+    }
 }

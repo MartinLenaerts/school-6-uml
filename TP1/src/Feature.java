@@ -8,4 +8,13 @@ public class Feature {
         this.name = name;
         this.description = description;
     }
+
+    @Override
+    public String toString() {
+        return "Feature{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }

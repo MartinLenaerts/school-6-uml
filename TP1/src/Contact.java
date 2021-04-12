@@ -5,11 +5,24 @@ public class Contact {
     private String email;
     private String locale = "English";
 
+    public Contact(){};
+
     public Contact(String firstname, String lastName, String middleName, String email, String locale) {
         this.firstname = firstname;
         this.lastName = lastName;
         this.middleName = middleName;
         this.email = email;
         this.locale = locale;
+    }
+
+    @Override
+    public String toString() {
+        return "Contact{" +
+                "firstname='" + firstname + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", middleName='" + middleName + '\'' +
+                ", email='" + email + '\'' +
+                ", locale='" + locale + '\'' +
+                '}';
     }
 }
